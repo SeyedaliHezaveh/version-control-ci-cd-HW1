@@ -1,8 +1,8 @@
 // App.jsx
 import React from 'react';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import ItemList from './components/ItemList';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import ItemList from './components/ItemList/ItemList';
 
 // Main application component
 const App = () => {
