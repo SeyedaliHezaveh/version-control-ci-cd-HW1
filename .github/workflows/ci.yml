@@ -4,14 +4,12 @@ on:
   push:
     branches:
       - dev
-      - main
   pull_request:
     branches:
-      - main
+      - dev
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -28,7 +26,16 @@ jobs:
       - name: Build the application
         run: npm run build
 
+      - name: Set up SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+
       - name: Deploy to GitHub Pages
-        run: npm run deploy
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.email "you@example.com"
+          git config --global user.name "Your Name"
+          git add -f build
+          git commit -m "Deploy to GitHub Pages"
+          git push -f git@github.com:username/repository.git master:gh-pages
