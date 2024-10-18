@@ -37,3 +37,12 @@ button {
     cursor: pointer;
   }
   
+main {
+  padding: 20px;
+}
+
+main ul {
+  list-style-type: circle;
+  margin: 0;
+  padding: 0;
+}
