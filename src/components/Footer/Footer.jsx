@@ -3,7 +3,9 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer>
-      <p>&copy; 2024 My Static Site</p>
+      <p>My Static Site</p>
+      <p>Follow us on social media!</p>
+    
     </footer>
   );
 };

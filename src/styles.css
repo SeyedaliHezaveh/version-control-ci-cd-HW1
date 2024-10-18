@@ -4,6 +4,16 @@ header {
     text-align: center;
     padding: 1em 0;
   }
+
+footer {
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
   
 nav ul {
 list-style-type: none;
