@@ -9,7 +9,7 @@ const Header = () => {
       <nav>
         <ul>
           <li>
-            <button>Home</button>
+            <button>Home & More</button>
           </li>
           <li>
             <button>About</button>
