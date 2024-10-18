@@ -13,15 +13,15 @@ A new repository was created on GitHub to host the project.
 ### 2. Installing React and Creating the Project
 The React project was initialized using the following command:
 
-\`\`\`bash
+```bash
 npx create-react-app my-static-site
-\`\`\`
+```
 
 ### 3. Setting Up .gitignore
 A .gitignore file was added to the repository with the following content to exclude unnecessary files and directories (e.g., node_modules):
 
-\`\`\`bash
+```bash
 node_modules/
 build/
 .DS_Store
-\`\`\`
+```
