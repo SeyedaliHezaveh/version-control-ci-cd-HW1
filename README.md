@@ -25,3 +25,15 @@ node_modules/
 build/
 .DS_Store
 ```
+
+### 4. Branch Overview
+
+Here is a list of the main branches created during the project:
+
+- **main**
+- **dev**
+- **feature/item-list**
+- **feature/footer**
+- **feature-header**
+- **initialize**
+  - Status: Initial branch for setup
