@@ -126,9 +126,3 @@ git init
 
 ```
 
-
-
-For automated deployment to GitHub Pages, GitHub Actions and a predefined workflow were used. The deploy.yml file was added under the .github/workflows directory.
-### 8. Final Project Deployment
-
-After merging the dev branch into main using a Pull Request, the project was automatically deployed to GitHub Pages.
