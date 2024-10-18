@@ -37,3 +37,17 @@ Here is a list of the main branches created during the project:
 - **feature-header**
 - **initialize**
   - Status: Initial branch for setup
+
+Here's a simplified and updated version of the new sections based on your input:
+### 5. Resolving Conflicts
+
+During the merging of branches into dev, two conflicts arose. These conflicts were manually resolved.
+### 6. Protecting the main Branch
+
+To prevent direct changes to the main branch, branch protection rules were set up in GitHub. With these restrictions, merging other branches into main is only possible through a Pull Request (PR).
+### 7. Automated Deployment with GitHub Actions
+
+For automated deployment to GitHub Pages, GitHub Actions and a predefined workflow were used. The deploy.yml file was added under the .github/workflows directory.
+### 8. Final Project Deployment
+
+After merging the dev branch into main using a Pull Request, the project was automatically deployed to GitHub Pages.
