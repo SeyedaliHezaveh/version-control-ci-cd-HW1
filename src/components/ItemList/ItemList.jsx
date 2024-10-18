@@ -1,11 +1,18 @@
 import React from 'react';
 
-const Footer = () => {
+const items = ['Item 1', 'Item 2', 'Item 3'];
+
+const ItemList = () => {
   return (
-    <footer>
-      <p>&copy; 2024 My Static Site</p>
-    </footer>
+    <main>
+      <h2>Item List</h2>
+      <ul>
+        {items.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+    </main>
   );
 };
 
-export default Footer;
+export default ItemList;
